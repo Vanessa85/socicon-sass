@@ -1,13 +1,27 @@
 {
   "name": "socicon-sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Social icons font",
   "main": "dist/css/socicon.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vanessa85/socicon-sass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vanessa85/socicon-sass/issues"
+  },
+  "homepage": "https://github.com/Vanessa85/socicon-sass#readme",
   "scripts": {
     "start": "gulp",
     "build": "gulp build"
   },
-  "keywords": [],
+  "keywords": [
+    "socicon",
+    "social",
+    "icons",
+    "fonts",
+    "sass"
+  ],
   "author": "Vanessa M. Paco Ramos <vanessapr.85@gmail.com>",
   "license": "MIT",
   "devDependencies": {
