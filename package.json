@@ -1,6 +1,6 @@
 {
   "name": "socicon-sass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Social icons font",
   "main": "dist/css/socicon.scss",
   "files": [
