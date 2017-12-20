@@ -1,9 +1,11 @@
 {
   "name": "socicon-sass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Social icons font",
   "main": "dist/css/socicon.scss",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vanessa85/socicon-sass.git"
