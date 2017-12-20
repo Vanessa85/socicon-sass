@@ -9,7 +9,7 @@ $socicon-fonts-src: '../fonts';
   src: url('#{$socicon-fonts-src}/Socicon.eot'); // IE9 Compat Modes
   src: url('#{$socicon-fonts-src}/Socicon.eot#iefix') format('embedded-opentype'), // IE6-IE8
     url('#{$socicon-fonts-src}/Socicon.woff2') format('woff2'), // Super Modern Browsers
-    url('#{$socicon-fonts-src}/Socicon/Socicon.ttf') format('truetype'), // Safari, Android, iOS
+    url('#{$socicon-fonts-src}/Socicon.ttf') format('truetype'), // Safari, Android, iOS
     url('#{$socicon-fonts-src}/Socicon.woff') format('woff'), // Pretty Modern Browsers
     url('#{$socicon-fonts-src}/Socicon.svg') format('svg'); //Legacy iOS
 }
