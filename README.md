@@ -1,4 +1,4 @@
-# Socicon-sass
+# socicon-sass
 This is a updated of social icons fonts [Socicon](http://www.socicon.com/) using sass.
 
 ## Install
@@ -8,10 +8,12 @@ This is a updated of social icons fonts [Socicon](http://www.socicon.com/) using
 ```
 
 ## Usage
-You can import it in a sass file and to use [webpack](https://webpack.js.org/).
+You can import it in a sass file (main.scss) and to use a tool like [webpack](https://webpack.js.org/) for to compile sass files.
+
 ```scss
+  $socicon-fonts-src: '~socicon-sass/dist/fonts'
   @import '~socicon-sass';
-  $socicon-fonts-src: '~socicon-sass/dist/fonts';
+  ;
 ```
 
 ## License
