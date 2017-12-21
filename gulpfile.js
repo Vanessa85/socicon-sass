@@ -5,7 +5,11 @@ const gulp = require('gulp'),
   cleanCSS = require('gulp-clean-css');
 
 gulp.task('cleanup-css', () => {
-  return del(['dist/css']);
+  return del(['dist/css/*.css']);
+});
+
+gulp.task('cleanup-sass', () => {
+  return del(['dist/css/*.scss']);
 });
 
 gulp.task('cleanup-fonts', () => {
@@ -25,7 +29,6 @@ gulp.task('copy-fonts', ['cleanup-fonts'], () => {
 
 gulp.task('css-build', ['cleanup-css'], () => {
   return gulp.src('src/*.scss')
-    .pipe(gulp.dest('dist/css'))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/css'))
     .pipe(cleanCSS())
@@ -33,9 +36,15 @@ gulp.task('css-build', ['cleanup-css'], () => {
     .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('move-sass', ['cleanup-sass'], () => {
+  return gulp.src('src/*.scss')
+    .pipe(rename({ prefix: '_' }))
+    .pipe(gulp.dest('dist/css'));
+});
+
 gulp.task('watch', () => {
   gulp.watch('src/*.scss', ['css']);
 });
 
-gulp.task('build', ['css-build', 'copy-fonts']);
+gulp.task('build', ['css-build', 'move-sass', 'copy-fonts']);
 gulp.task('default', ['watch']);
