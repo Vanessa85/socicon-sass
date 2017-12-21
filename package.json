@@ -2,7 +2,7 @@
   "name": "socicon-sass",
   "version": "1.0.4",
   "description": "Social icons font",
-  "main": "dist/css/socicon.scss",
+  "main": "dist/css/_socicon.scss",
   "files": [
     "dist/"
   ],
